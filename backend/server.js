@@ -1,0 +1,1 @@
+const http = require('http');\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.setHeader('Content-Type', 'text/plain');\n  res.end('Node.js Server Responding\n');\n});\nserver.listen(3000, () => {\n  console.log('Server running at http://localhost:3000/');\n});
